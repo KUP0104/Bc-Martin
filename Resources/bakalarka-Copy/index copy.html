@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang='cs'>
+<head>
+    <meta charset="utf-8">
+    <title>Projekt</title>
+    <script src="http://158.196.218.88/socket.io/socket.io.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+	<script src="https://cdn.rawgit.com/mrturck/aframe-joystick/master/joystick.min.js"></script>
+	<script src="app.js"></script>
+	
+   
+</head>
+
+<body>
+    <script src="scripts copy.js"></script>
+	<script src="test.js"></script>
+    <a-scene>
+			<a-entity camera id="camera" position="0 9 0" look-controls wasd-controls>
+				<a-scene joystick>
+			</a-entity>
+			<!-- znazorneni osoby -->
+			<a-cylinder color="green" material="side: double" open-ended="false" rotation="0 0 0" position="3 1.5 5" height="3"></a-cylinder>
+
+			<!-- vytvoreni zdi -->
+			<a-plane position="3.5 1.5 0" color="blue" width="7" height="3" material="side: double"></a-plane>
+			<a-plane position="7 1.5 1" color="red" width="2" height="3" material="side: double" rotation="0 -90 0"></a-plane>
+			<a-plane position="7.1 1.5 2"color="blue" width="0.2" height="3" material="side: double"></a-plane>
+			<a-plane position="7.2 1.5 0.975" color="red" width="2.05" height="3" material="side: double" rotation="0 -90 0"></a-plane>
+			<a-plane position="9.2 1.5 -0.05" color="blue" width="4" height="3" material="side: double"></a-plane>
+			<a-plane position="11.2 1.5 2.2" color="red" width="4.505" height="3" material="side: double" rotation="0 -90 0"></a-plane>
+			<a-plane position="9.95 1.5 4.45" color="blue" width="2.5" height="3" material="side: double"></a-plane>
+            <a-plane position="8.7 1.5 3.675" color="red" width="1.55" height="3" material="side: double" rotation="0 -90 0"></a-plane>
+			<a-plane position="7.85 1.5 2.9" color="blue" width="1.7" height="3" material="side: double"></a-plane>
+			<a-plane position="7 1.5 4.95" color="red" width="4.1" height="3" material="side: double" rotation="0 -90 0"></a-plane>
+			<a-plane position="7.35 1.5 7" color="blue" width="0.7" height="3" material="side: double"></a-plane>
+			<a-plane position="7.7 1.5 8.275" color="red" width="2.55" height="3" material="side: double" rotation="0 -90 0"></a-plane>
+			<a-plane position="8.7 1.5 9.55" color="blue" width="2" height="3" material="side: double"></a-plane>
+			<a-plane position="9.7 1.5 10.55" color="red" width="2" height="3" material="side: double" rotation="0 -90 0"></a-plane>
+			<a-plane position="7.95 1.5 11.55" color="blue" width="3.5" height="3" material="side: double"></a-plane>
+			<a-plane position="6.2 1.5 9.25" color="red" width="4.6" height="3" material="side: double" rotation="0 -90 0"></a-plane>
+			<a-plane position="3.1 1.5 6.95" color="blue" width="6.2" height="3" material="side: double"></a-plane>
+			<a-plane position="0 1.5 3.5" color="red" width="7" height="3" material="side: double" rotation="0 -90 0"></a-plane>
+			<a-triangle position="0 0 0" color="green"></a-triangle>
+			
+      </a-scene>
+</body>
+
+</html>
+
+
