@@ -5,24 +5,42 @@
     <meta charset="utf-8">
     <title>Projekt</title>
     
-    <!--    Scripts     -->
+    <!--    Framework loading scripts     -->
     <!--<script src="http://158.196.218.88/socket.io/socket.io.js"></script>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/mrturck/aframe-joystick/master/joystick.min.js"></script>-->
     <script src="js/joystick.min.js"></script>
     <script src="js/aframe.min.js"></script>
-    <script src="js/scripts%20copy.js"></script>
-    <script src="js/test.js"></script>
+    
+    <!--    Styles      -->
+    <style>
+        .controller {
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 7rem;
+            height: 7rem;
+            background-color: #d0d0d0;
+            z-index: 10;
+        }
+        
+        .controller:hover {
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
+<div class="controller" id="app-controller"></div>
+
 <a-scene>
-    <a-entity camera id="camera" look-controls position="2 9 0" wasd-controls>
+    <a-entity camera id="camera" look-controls position="0 10 18" wasd-controls>
         <a-scene joystick></a-scene>
     </a-entity>
     
     <!-- znazorneni osoby -->
-    <a-cylinder color="green" height="3" material="side: double" open-ended="false" position="3 1.5 5"
+    <a-cylinder color="green" height="3" radius="0.3" material="side: double" open-ended="false" position="3 1.5 5"
                 rotation="0 0 0" id="app-person"></a-cylinder>
     
     <!-- vytvoreni zdi -->
@@ -51,10 +69,12 @@
              width="4.6"></a-plane>
     <a-plane color="blue" height="3" material="side: double" position="3.1 1.5 6.95" width="6.2"></a-plane>
     <a-plane color="red" height="3" material="side: double" position="0 1.5 3.5" rotation="0 -90 0" width="7"></a-plane>
-    <a-triangle color="green" position="0 0 0"></a-triangle>
-
+    <a-triangle color="green" rotation="-90 0 0" position="0 0 0" id="app-triangle"></a-triangle>
 </a-scene>
 
+<!--    Personal scripts    -->
+<script src="js/scripts%20copy.js"></script>
+<script src="js/test.js"></script>
 </body>
 
 </html>
