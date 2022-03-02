@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang='cs'>
+<head>
+    <meta charset="utf-8">
+    <title>Projekt</title>
+    
+    <!--    Scripts     -->
+    <!--<script src="http://158.196.218.88/socket.io/socket.io.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/mrturck/aframe-joystick/master/joystick.min.js"></script>-->
+    <script src="js/joystick.min.js"></script>
+    <script src="js/aframe.min.js"></script>
+    <script src="js/scripts%20copy.js"></script>
+    <script src="js/test.js"></script>
+</head>
+
+<body>
+<a-scene>
+    <a-entity camera id="camera" look-controls position="2 9 0" wasd-controls>
+        <a-scene joystick></a-scene>
+    </a-entity>
+    
+    <!-- znazorneni osoby -->
+    <a-cylinder color="green" height="3" material="side: double" open-ended="false" position="3 1.5 5"
+                rotation="0 0 0" id="app-person"></a-cylinder>
+    
+    <!-- vytvoreni zdi -->
+    <a-plane color="blue" height="3" material="side: double" position="3.5 1.5 0" width="7"></a-plane>
+    <a-plane color="red" height="3" material="side: double" position="7 1.5 1" rotation="0 -90 0" width="2"></a-plane>
+    <a-plane color="blue" height="3" material="side: double" position="7.1 1.5 2" width="0.2"></a-plane>
+    <a-plane color="red" height="3" material="side: double" position="7.2 1.5 0.975" rotation="0 -90 0"
+             width="2.05"></a-plane>
+    <a-plane color="blue" height="3" material="side: double" position="9.2 1.5 -0.05" width="4"></a-plane>
+    <a-plane color="red" height="3" material="side: double" position="11.2 1.5 2.2" rotation="0 -90 0"
+             width="4.505"></a-plane>
+    <a-plane color="blue" height="3" material="side: double" position="9.95 1.5 4.45" width="2.5"></a-plane>
+    <a-plane color="red" height="3" material="side: double" position="8.7 1.5 3.675" rotation="0 -90 0"
+             width="1.55"></a-plane>
+    <a-plane color="blue" height="3" material="side: double" position="7.85 1.5 2.9" width="1.7"></a-plane>
+    <a-plane color="red" height="3" material="side: double" position="7 1.5 4.95" rotation="0 -90 0"
+             width="4.1"></a-plane>
+    <a-plane color="blue" height="3" material="side: double" position="7.35 1.5 7" width="0.7"></a-plane>
+    <a-plane color="red" height="3" material="side: double" position="7.7 1.5 8.275" rotation="0 -90 0"
+             width="2.55"></a-plane>
+    <a-plane color="blue" height="3" material="side: double" position="8.7 1.5 9.55" width="2"></a-plane>
+    <a-plane color="red" height="3" material="side: double" position="9.7 1.5 10.55" rotation="0 -90 0"
+             width="2"></a-plane>
+    <a-plane color="blue" height="3" material="side: double" position="7.95 1.5 11.55" width="3.5"></a-plane>
+    <a-plane color="red" height="3" material="side: double" position="6.2 1.5 9.25" rotation="0 -90 0"
+             width="4.6"></a-plane>
+    <a-plane color="blue" height="3" material="side: double" position="3.1 1.5 6.95" width="6.2"></a-plane>
+    <a-plane color="red" height="3" material="side: double" position="0 1.5 3.5" rotation="0 -90 0" width="7"></a-plane>
+    <a-triangle color="green" position="0 0 0"></a-triangle>
+
+</a-scene>
+
+</body>
+
+</html>
+
+
